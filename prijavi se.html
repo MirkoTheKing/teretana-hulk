@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="icon" href="images/hlogo.png">
+        <script src="js/forma.js"></script>
+        <title>Hulk</title>
+    </head>
+<body>
+    <header>
+        <div class="gore">
+            <ul class="main-gore">
+                <li ><a href="pocetna.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li class="active "><a href="prijavi se.html">Prijavi se</a></li>
+                <li id="glogo"><img class="glogoimg" height="55px" src="images/hlogo.png" alt=""></li>
+            </ul>
+        </div>
+    </header>
+
+        <div class="center">
+            <div class="prijava">
+                <i><h2 id="prijavi_se">Prijavi se</h2></i>
+                <p id="popust">Prijavi se za članstvo danas i dobijaš 50% na prvi trening bilo kog tipa! <br>
+                </p>
+                <br>
+            </div>
+            <br>
+            <form name="myForm">
+                Ime: <input type="text" id="ime" name="ime" placeholder="Tvoje ime"/><br>
+                Prezime: <input type="text" id="prezime" name="prezime" placeholder="Tvoje prezime"/><br>
+                <input type="reset" value="Poništi odgovor" />
+            </form><br>
+
+            <button onclick="dalje1()" id="dugmedalje1">Dalje</button><br>
+
+            <form id="dalje1">   
+                <p id="br">Broj telefona:</p> <input type="number" id="telefon" name="telefon" placeholder="Tvoj broj telefona"/><br>
+                <p id="em">E-mail: </p><input type="email" id="mejl" name="mejl" placeholder="Tvoj e-mail"/><br>
+                <p id="a">Adresa: </p><input type="text" id="adresa" name="adresa" placeholder="Tvoja adresa"/><br>            
+                               
+            </form><br>
+    
+            <button onclick="dalje2()" id="dugmedalje2">Dalje</button><br>
+
+            <form id="dalje2">                
+                <p id="sif">Šifra:</p> <input type="password" id="sifra" name="sifra" placeholder="Nova šifra"/><br>
+                <p id="psif">Potvrda šifre: </p><input type="password" id="psifra" name="psifra" placeholder="Ponovi šifru"/><br>                
+            </form><br>
+
+            <button onclick="dalje3()" id="dugmedalje3">Odaberi termin</button><br>
+
+            <form id="dalje3">                
+                Odaberi koji tip treninga bi želeo/la da zakažeš: <br>
+                 <select name="trening" id="odabir">
+                    <option value="birag">Grupni trening</option>
+                    <option value="birap">Personalni trening</option>
+                    <option value="birak">Kardio trening</option>
+                </select><br>
+                Kog dana želiš prvi trening:  <input class="datum" id="datum" type="date"><br> 
+                U koliko sati želiš prvi trening:  <input class="vreme" id="vreme" type="time"><br>      
+            </form>   
+
+            <button onclick="dalje4()" id="dugmedalje4">Zakaži trening</button><br>
+
+            <div class="posebno_dugme">
+                <button id="za_motivaciju">Pogledaj motivacionu sliku meseca</button> 
+                <div id="slika_motivacija">   <img height="460px" src="images/mot2.jpg" alt=""></div> <br>
+            </div>
+            <br><br>
+        </div>
+ 
+    
+</body> 
+
+</html>

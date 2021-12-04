@@ -1,0 +1,426 @@
+html{
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)),url("../images/poz.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ 
+/* HEADER */
+/* Koristili smo grid layout */
+.vrste {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.podvrste {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*Veliki div sa menijem*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0c0c0b;
+}
+
+/*Da se meni nalazi levo*/ 
+li {
+    float: left;
+    padding: 10px 110px;
+}
+/* Za mali logo u headeru desno */
+#glogo{
+    padding: 10px 75px;
+
+}
+.glogoimg{
+    border-radius: 20px;
+}
+/* Kada se misem predje preko malog loga */
+.glogoimg:hover{
+    height: 57px;
+}
+/*Elemeniti liste menija koji su linkovi*/  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+/* Kada se mišem pređe preko elemenata u gornjem meniju */
+li a:hover {
+    background-color: #635e5e;
+    color: #0f0e0e;
+    border-radius: 20px;
+}
+/* Meni kad je ta stranica otvorena*/
+.active {
+    background-color: #83807d;
+}
+
+
+
+/* POCETNA */
+
+/* slika za motivaciju*/
+.mot{
+    margin-left: 15%;
+    margin-top: 50px;
+}
+/* Vrste treninga */
+.vrstetr{
+    background-color: #83807d;
+    height: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 25px;
+}
+/* Svaka vrsta treninga sa opisom */
+#opis_grupni, #grupni {
+    padding: 5px;
+    text-align: center;
+    background-color: #635e5e;
+    color: #0f0e0e;
+    border: solid 2px #f2f2f2;
+    border-radius: 25px;
+}  
+#opis_grupni {
+    display: none;
+    color: black;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../images/back.jpg") no-repeat 0 50%;
+    background-size: cover; 
+}
+#opis_personalni, #personalni {
+    padding: 5px;
+    text-align: center;
+    background-color: #635e5e;
+    color: #0f0e0e;
+    border: solid 2px #f2f2f2;
+    border-radius: 25px;
+}
+#opis_personalni {
+    display: none;
+    color: black;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../images/back.jpg") no-repeat 0 50%;
+    background-size: cover;  
+}
+#opis_kardio, #kardio {
+    padding: 5px;
+    text-align: center;
+    background-color: #635e5e;
+    color: #0f0e0e;
+    border: solid 2px #f2f2f2;
+    border-radius: 25px;
+} 
+#opis_kardio {
+    display: none;
+    color: black;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../images/back.jpg") no-repeat 0 50%;
+    background-size: cover;  
+}
+
+.opis{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 70%;
+}
+.slikatr{
+    height: 50%;
+    width: 50%;
+}
+.prijavi{
+    color: black;
+}
+
+/* Kako do nas sa mapom */
+.mapa{
+    float: left;
+    position: relative;
+    left: 250px;
+}
+.tekstkontakt{
+    float: right;
+    position: relative;
+    right: 250px;
+}
+
+/* O NAMA */
+#slikaoNama{
+    position: absolute;
+    top: 180px;
+    left: 950px;
+}
+#tekstONama{
+    width: 700px;
+    position: relative;
+    left: 50px;
+    color: aliceblue;
+}
+b, h2, a{
+    color: whitesmoke;
+}
+
+/* GALERIJA */
+
+/* Slideshow slika prostora*/
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Brojevi slika na početnoj stranici, npr. 1/3 */
+.brojevi {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Tackice ispod slika slideshow-a*/
+.tackica {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #0a0907;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* Animacija za nestajanje */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.sadržaj{
+    background-color: #83807d;
+    height: 500px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+
+/* PRIJAVA */
+
+/* Div za stranicu prijave veliki div */
+.center {
+    position:relative;
+    top: 150px;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; 
+    margin-left: -15em; 
+}
+
+/* Test za prijavu */
+#prijavi_se{
+    color:  black;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.prijava{
+    background-color: #83807d;
+    border-radius: 25px;
+    width: 100%;  
+    padding-left: 20px;   
+    padding-right: 20px;
+}
+#popust{
+    color:  black;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+}
+#za_motivaciju{
+    border: 2px solid grey;  
+    border-radius:12px; 
+    padding: 5px;  
+    margin: 10px;  
+    outline:none;
+    width: 100%;
+    background-color: #0f0e0e;
+    color: #f2f2f2;
+    font-size: larger;
+}
+.posebno_dugme{
+    border: 4px solid #1b1a1a; 
+    border-radius:12px;             
+    width: 100%; 
+    padding-left: 20px;    
+    padding-right: 20px;  
+    background-color: white; 
+    height: cover;
+    margin-bottom: 50px;
+}
+
+/* Forma za prijavljivanje */
+form {  
+    border: 4px solid #1b1a1a; 
+    border-radius:12px;             
+    width: 100%; 
+    padding-left: 20px;  
+    padding-top: 20px;  
+    padding-right: 20px;  
+    background-color: white; 
+    height: cover;
+}  
+#dalje1, #dalje2, #dalje3{
+    display: none;
+    border: 4px solid #1b1a1a; 
+    border-radius:12px;             
+    width: 100%; 
+    padding-left: 20px;  
+    padding-top: 20px;  
+    padding-right: 20px;  
+    background-color: white; 
+    height: cover;
+
+}
+#dugmedalje2, #dugmedalje3, #dugmedalje4{
+    display: none;
+    border: 2px solid grey;  
+    border-radius:12px; 
+    padding: 5px;  
+    margin: 10px;  
+    outline:none;
+    width: 100%;
+    background-color: #0f0e0e;
+    color: #f2f2f2;
+    font-size: larger;
+}
+input, select {  
+    border: 2px solid grey;  
+    border-radius:12px; 
+    padding: 5px;  
+    margin: 10px;  
+    outline:none; 
+} 
+button{
+    border: 2px solid grey;  
+    border-radius:12px; 
+    padding: 5px;  
+    margin: 10px;  
+    outline:none;
+    width: 100%;
+    background-color: #0f0e0e;
+    color: #f2f2f2;
+    font-size: larger;
+}
+
+
+
+/* FOOTER */
+.dole{
+    position: relative;
+    top: 20px;
+}
+.main-dole{
+    height: 50px;
+    border-radius: 0%;
+}
+.footer{
+    display: block;
+    color: white;
+    text-align: center;
+    width: 17%;
+    font-family: fantasy;
+    font-style: italic;
+}  
+#instalogo{
+    border-radius: 30px;
+}
+#lok{
+    border-radius: 25px;
+}
+#bob{
+    border-radius: 25px;
+}
+.kraj{
+    text-align: center;
+    height: 250px;
+    background-color: #dac292;
+    border-radius: 0%;
+    left: 50%;
+}
+
+
+
+
+/* Responzivnost */
+@media only screen and (min-width: 360px) and (max-width: 740px){
+    .podvrste{
+        width: 100px;
+        font-size: 10px;
+        padding: none;
+    }
+    #tekstONama{
+        width: 300px;
+        font-size: 10px;
+        left: 17px;
+    }
+    #slikaoNama{
+        position: static;
+    }
+    .sadržaj{
+        height: 800px;
+    }
+    #mapica{
+        width: 150px;
+        height: 250px;
+        position: absolute;
+        right:1em;
+        top: 370px;
+    }
+    .center{
+        position: absolute;
+        top: 480px;
+        left: 180px;
+        width: 400px;
+        font-size: 10px;
+    }
+    #myForm{
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    #slikaoNama{
+        position: static;
+    }
+    .sadržaj{
+        height: 900px;
+    }
+    #mapica{
+        position: absolute;
+        top: 370px;
+        float: none;
+        right: 30px;
+    }
+}
